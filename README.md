@@ -1,19 +1,14 @@
-# Rig Machinery Sensor Anomaly Tracker 🌊⚓
+# Real-Time Rig Machinery Predictive Maintenance Pipeline (NASA C-MAPSS) 🌊⚓
 
-## Project Overview
-This repository contains a production-ready, unsupervised data pipeline designed to ingest streaming telemetry data from offshore rig systems (such as high-pressure hydraulic pumps, subsea drilling strings, or maritime thrusters) and automatically identify early structural failures or erratic operational signatures.
+## Core Product Showcase
+This repository hosts a production-grade, unsupervised machine learning product designed to ingest massive multi-variable sensor streams from heavy rotating industrial components and automatically identify thermodynamic and mechanical degradation cycles.
 
-By converting raw time-series data streams into robust rolling statistical baselines, this architecture isolates mechanical noise and triggers diagnostic anomaly alerts before catastrophic equipment downtime occurs.
+Instead of relying on mock scripts, this architecture is fully integrated with the **Official NASA C-MAPSS Turbofan Engine Degradation Dataset (FD001)**. It tracks 21 distinct continuous subsea/aerodynamic sensors across a fleet of industrial units operating under varying levels of structural duress.
 
-## Core Engineering Features
-- **Rolling Window Feature Engineering:** Automatically computes moving statistical variations (rolling mean and standard deviation matrices) to handle shifting system drift and isolate baseline machinery frequencies.
-- **Unsupervised Anomaly Isolation:** Deploys an optimized Scikit-Learn `Isolation Forest` model, making it highly effective for asset environments where labeled operational historical failure metrics are unavailable.
-- **Real-Time Streaming Simulation:** Tailored to process multi-variable continuous logs, computing health flags, and generating metric scores natively.
+## Machine Learning Architecture
+1. **Fleet Partitioned Feature Engineering:** Groups high-variance streaming data cycles by independent machinery IDs to calculate structural `rolling window mean` and `standard deviation matrices` without data leakage.
+2. **Unsupervised Outlier Isolation:** Implements an optimized `Isolation Forest` mathematical framework calibrated to flag early structural deviations before equipment breakdown.
+3. **Automated Analytics Logging:** Pipelines transformed features directly into structured outputs, generating automated critical alert matrices for control-room operators.
 
-## Technical Stack
-- **Language:** Python
-- **Libraries:** Pandas, NumPy, Scikit-Learn
-- **Developer Workflow:** Git, Bash/PowerShell script automation
-
-## Industrial Transition Framing
-*Architectural Insight:* The code architecture deployed within this project applies the exact statistical processing models used to monitor unstable vital parameters within high-stakes environments (such as intensive care multi-variable streaming networks) and maps them directly onto upstream mechanical asset telemetry dashboards.
+## Performance Metrics Output
+The framework scales and checks real telemetry files natively, mapping exact anomalous thresholds, isolating structural failures, and exporting full telemetry audits to an industrial `.csv` schema.
